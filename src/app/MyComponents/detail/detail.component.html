@@ -1,0 +1,24 @@
+<div class="container">
+    <div *ngIf="recipe" class="text-justify">
+      <div class="d-flex flex-wrap">
+        <div class="col-lg-6">
+            <img class="dish_image" src={{recipe.strMealThumb}} alt="">
+          </div>
+        <div class="col-lg-6">
+          <p class="dish_name">{{recipe.strMeal}}</p>
+          <div class="Ingredients">
+            <h2 class="text-success ml-4">Ingredients:</h2>
+            <ul>
+              <li class="text-info" *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="mt-5">
+        <h1 class="text-success fw-bold">Instructions:</h1>
+        <p>{{ recipe.strInstructions }}</p>
+      </div>
+    </div>
+  </div>
+  

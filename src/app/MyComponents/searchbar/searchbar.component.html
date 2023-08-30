@@ -1,0 +1,30 @@
+<div class="container-fluid m-auto body">
+    <div class="search-box">
+        <input class="search-input" type="text" [(ngModel)]="searchTerm" placeholder="Search Any Recipe....">
+        <button (click)="search()" class="search-btn">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="mt-5 ">Some Recommended for You</h1>
+    <hr>
+    <div>
+            <div class="row" >
+            <ng-container class="results" *ngIf="apiData.length > 0">
+            <div class="col-md-4 col-lg-4" *ngFor="let meal of apiData">
+                <div class="card mb-3 main_card" >
+                <div class="wrapper" (click)="viewRecipe(meal.idMeal)">
+            <div class="header"><img src="{{ meal.strMealThumb }}" alt=""></div>
+            <h1 class="name">{{ meal.strMeal }}</h1>
+            <strong class="text-success text-center">{{ meal.strCategory }}</strong>
+            <div class="grey-border"></div>
+            <!-- <a (click)="viewRecipe(meal.idMeal)" class="button">Read More</a> -->
+            </div>
+            </div>
+            </div>
+            </ng-container>
+            </div>
+    </div>
+          </div>

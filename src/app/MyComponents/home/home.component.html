@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <h1 class="text-success ml-5 mt-5">Here are the search Results</h1>
+    <div class="row">
+        <div class="col-md-4 col-lg-4" *ngFor="let food of recipes">
+            <div class="card mb-3 main_card">
+                <div class="wrapper">
+                    <div class="header">
+                        <img src="{{ food.strMealThumb }}" alt=""></div>
+                        <h1 class="name">{{ food.strMeal }}</h1>
+                        <strong class="text-success">{{ food.strCategory }}</strong>
+                        <div class="grey-border"></div>
+                        <a (click)="viewRecipe(food.idMeal)" class="button">Read More</a>
+                        <a (click)="addToFavorites(food)" class="button">Add to Favorites</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notFound-container" *ngIf="showNotFound">
+            <div class="notFound-content">
+                <h2 class="text-secondary">No search results found for '{{ searchTerm }}'</h2>
+            </div>
+        </div>
+    </div>

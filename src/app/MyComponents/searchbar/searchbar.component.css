@@ -1,0 +1,167 @@
+.body
+{
+    width: 100%;
+    background-image: url("https://cutewallpaper.org/28/dark-vegetables-wallpaper/283348688.jpg");
+    background-size: cover ;
+}
+.search-box {
+    width: 650px;
+    display: flex;
+      margin: auto;
+      padding: 7rem;
+
+  }
+  
+  .search-input {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 15px 45px 15px 15px;
+    background-color: #eaeaeb;
+    color: #6c6c6c;
+    border-radius: 6px;
+    border:none;
+    transition: all .4s;
+  }
+  
+  .search-input:focus {
+    border:none;
+    outline:none;
+    box-shadow: 0 1px 12px #b8c6db;
+    -moz-box-shadow: 0 1px 12px #b8c6db;
+    -webkit-box-shadow: 0 1px 12px #b8c6db;
+  }
+  
+  .search-btn {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 6px 9px;
+    margin-left:-45px;
+    border:none;
+    color: #6c6c6c;
+    transition: all .4s;
+    z-index: 10;
+  }
+  
+  .search-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: black;
+  }
+  
+  .search-btn:focus {
+    outline:none;
+    color:black;
+  }
+  
+   
+  
+  @media screen and (max-width: 768px) {
+    .search-box {
+        width: 350px;
+        display: flex;
+          margin: auto;
+          padding: 7rem 2rem 7rem 2rem;
+    
+      }
+      
+      .search-input {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        padding: 15px 45px 15px 15px;
+        background-color: #eaeaeb;
+        color: #6c6c6c;
+        border-radius: 6px;
+        border:none;
+        transition: all .4s;
+      }
+      
+      .search-input:focus {
+        border:none;
+        outline:none;
+        box-shadow: 0 1px 12px #b8c6db;
+        -moz-box-shadow: 0 1px 12px #b8c6db;
+        -webkit-box-shadow: 0 1px 12px #b8c6db;
+      }
+      
+      .search-btn {
+        background-color: transparent;
+        font-size: 18px;
+        padding: 6px 9px;
+        margin-left:-45px;
+        border:none;
+        color: #6c6c6c;
+        transition: all .4s;
+        z-index: 10;
+      }
+      
+      .search-btn:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        color: black;
+      }
+      
+      .search-btn:focus {
+        outline:none;
+        color:black;
+      }
+  }
+  /* for the Food Card */
+
+
+img {
+    max-width: 100%;
+}
+.main_card {
+    box-shadow: 4px 5px 8px #999;
+    max-width: 250px;
+    margin: 20px auto;
+    display: flex;
+}
+.wrapper {
+    background: #fff;
+    max-width: 250px;
+    /* position: relative; */
+    /* margin: 20px auto; */
+    box-shadow: 0 0 20 px 10px #212129;
+}
+.wrapper .header {
+    min-height: 180px;
+    opacity: 0.9;
+    background-size: cover;
+}
+.wrapper .name {
+    font-size: 1.4em;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.wrapper .border {
+    border: #EF233C 2px solid;
+    position: relative;
+    margin: 0 auto;
+    width: 64px;
+}
+.wrapper .info {
+    margin-top: -11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 30px;
+}
+.wrapper .button {
+    background: #212129;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    transition: 300ms;
+}
+.wrapper .button:hover {
+    background: #A3031D;
+    transition: 300ms;
+}
+/* end food card formatting */

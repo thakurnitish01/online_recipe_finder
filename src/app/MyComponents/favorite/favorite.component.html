@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Favorite Recipes</h1>
+    <div *ngIf="favorites.length > 0">
+        <div class="card mb-3" *ngFor="let favorite of favorites">
+            <div class="wrapper">
+                <div class="header">
+                    <img [src]="favorite.strMealThumb" alt=""></div>
+                    <h1 class="name">{{ favorite.strMeal }}</h1>
+                    <strong class="text-success">{{ favorite.strCategory }}</strong>
+                    <div class="grey-border"></div>
+                    <a (click)="removeFromFavorites(favorite)" class="button">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="favorites.length === 0">
+            <p>No favorite recipes found.</p>
+        </div>
+    </div>
